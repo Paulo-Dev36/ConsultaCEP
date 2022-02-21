@@ -15,7 +15,7 @@ namespace ConsultaCEPs
         public consultaInitial()
         {
             InitializeComponent();
-            this.horas.Text = DateTime.Now.ToString("HH:mm:ss");
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -67,6 +67,9 @@ namespace ConsultaCEPs
             }
         }
 
-     
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.horas.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
     }
 }
